@@ -11,6 +11,5 @@
   "description": "",
   "bin": {
     "cleanlogs": "index.js"
-    
   }
 }
