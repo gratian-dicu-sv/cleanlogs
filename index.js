@@ -9,5 +9,10 @@ const rl = readline.createInterface({
 });
 
 rl.on('line', (line) => {
-    console.info("GG: ", line);
+    const isOhanaLikeLog = /\[|\]/.test(line.split(" ")[3]);
+    if (isOhanaLikeLog) {
+        console.info("OHANA_LOG: ", line);
+    } else {
+        console.info("just a log: ", line);
+    }
 });
