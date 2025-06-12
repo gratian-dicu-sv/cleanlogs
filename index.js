@@ -137,7 +137,6 @@ const pubsub = new PubSub();
 const LOG_MESSAGE_SENT = 'LOG_MESSAGE_SENT';
 
 const sendLog = (json, message) => {
-    console.warn("Publishing message");
     pubsub.publish(LOG_MESSAGE_SENT, {messageReceived: {device: json, message}});
     return true;
 }
