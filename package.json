@@ -11,6 +11,18 @@
   "description": "",
   "bin": {
     "cleanlogs": "index.js"
-    
+  },
+  "dependencies": {
+    "@apollo/client": "^3.13.8",
+    "@apollo/server": "^4.12.1",
+    "@as-integrations/express5": "^1.0.0",
+    "@graphql-tools/schema": "^10.0.23",
+    "express": "^5.1.0",
+    "graphql": "^16.11.0",
+    "graphql-subscriptions": "^3.0.0",
+    "graphql-tools": "^9.0.18",
+    "graphql-ws": "^6.0.5",
+    "log-parsed-json": "^0.0.59",
+    "ws": "^8.18.2"
   }
 }
